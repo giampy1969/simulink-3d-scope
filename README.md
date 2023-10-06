@@ -1,6 +1,8 @@
 # simulink-3d-scope
 Multitrack 3D Simulink Scope
 
+[![View simulink-3d-scope on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/4915-simulink-3d-scope)
+
 This block is an enhanced version of the standard XYGraph Simulink&reg; block.
 The standard XYGraph allows to plot the motion of ONE point in the XY plane. This block allows plotting the motion of SEVERAL points in the XYZ space.
 
