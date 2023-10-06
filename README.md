@@ -8,8 +8,6 @@ In other words each point draws a line as it moves, so you end up having several
 
 This block is very useful when you have to compare the motion of a point versus a reference trajectory. See this blog entry for more information: https://blogs.mathworks.com/pick/2017/03/10/3d-scope/
 
-TO install this vesion, simply add the folder to the MATLAB&reg; path. For MATLAB versions older than R2014b, please go to https://www.mathworks.com/matlabcentral/fileexchange/4915-3dscope?s_tid=srchtitle and download version 3.1, which contains an installer that installs older versions.
-
-Read the readme.txt file for more info.
+To install this vesion, simply add the folder to the MATLAB&reg; path. For MATLAB versions older than R2014b (and related legacy information), please go to https://www.mathworks.com/matlabcentral/fileexchange/4915-3dscope?s_tid=srchtitle and download version 3.1, which contains an installer that installs older versions.
 
 Giampy
