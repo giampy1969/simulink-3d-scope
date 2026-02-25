@@ -1,1185 +1,815 @@
+# MathWorks OPC Text Package
 Model {
-  Name			  "m3dscope_new"
-  Version		  8.4
-  MdlSubVersion		  0
-  SavedCharacterEncoding  "windows-1252"
-  GraphicalInterface {
-    NumRootInports	    0
-    NumRootOutports	    0
-    ParameterArgumentNames  ""
-    ComputedModelVersion    "1.27"
-    NumModelReferences	    0
-    NumTestPointedSignals   0
-  }
-  slprops.hdlmdlprops {
-    $PropName		    "HDLParams"
-    $ObjectID		    1
-    Array {
-      Type		      "Cell"
-      Dimension		      2
-      Cell		      "HDLSubsystem"
-      Cell		      "m3dscope_new"
-      PropName		      "mdlProps"
-    }
-  }
-  ScopeRefreshTime	  0.035000
-  OverrideScopeRefreshTime on
-  DisableAllScopes	  off
-  DataTypeOverride	  "UseLocalSettings"
-  DataTypeOverrideAppliesTo "AllNumericTypes"
-  MinMaxOverflowLogging	  "UseLocalSettings"
-  MinMaxOverflowArchiveMode "Overwrite"
-  FPTRunName		  "Run 1"
-  MaxMDLFileLineLength	  120
-  Object {
-    $PropName		    "BdWindowsInfo"
-    $ObjectID		    2
-    $ClassName		    "Simulink.BDWindowsInfo"
-    Object {
-      $PropName		      "WindowsInfo"
-      $ObjectID		      3
-      $ClassName	      "Simulink.WindowInfo"
-      IsActive		      [1]
-      Location		      [494.0, 97.0, 670.0, 420.0]
-      Object {
-	$PropName		"ModelBrowserInfo"
-	$ObjectID		4
-	$ClassName		"Simulink.ModelBrowserInfo"
-	Visible			[0]
-	DockPosition		"Left"
-	Width			[50]
-	Height			[50]
-	Filter			[9]
-      }
-      Object {
-	$PropName		"ExplorerBarInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.ExplorerBarInfo"
-	Visible			[1]
-      }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		6
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[620.0, 245.0]
-	ZoomFactor		[1.0]
-	Offset			[0.0, 0.0]
-      }
-    }
-  }
-  Created		  "Thu Nov 26 22:53:08 2015"
-  Creator		  "gcampa"
-  UpdateHistory		  "UpdateHistoryNever"
-  ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "gcampa"
-  ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Nov 30 18:00:37 2017"
-  RTWModifiedTimeStamp	  433965629
-  ModelVersionFormat	  "1.%<AutoIncrement:27>"
-  ConfigurationManager	  "none"
-  SampleTimeColors	  off
-  SampleTimeAnnotations	  off
-  LibraryLinkDisplay	  "disabled"
-  WideLines		  off
-  ShowLineDimensions	  off
-  ShowPortDataTypes	  off
-  ShowDesignRanges	  off
-  ShowLoopsOnError	  on
-  IgnoreBidirectionalLines off
-  ShowStorageClass	  off
-  ShowTestPointIcons	  on
-  ShowSignalResolutionIcons on
-  ShowViewerIcons	  on
-  SortedOrder		  off
-  ExecutionContextIcon	  off
-  ShowLinearizationAnnotations on
-  ShowMarkup		  on
-  BlockNameDataTip	  off
-  BlockParametersDataTip  off
-  BlockDescriptionStringDataTip	off
-  ToolBar		  on
-  StatusBar		  on
-  BrowserShowLibraryLinks off
-  BrowserLookUnderMasks	  off
-  SimulationMode	  "normal"
-  PauseTimes		  "5"
-  NumberOfSteps		  1
-  SnapshotBufferSize	  10
-  SnapshotInterval	  10
-  NumberOfLastSnapshots	  0
-  LinearizationMsg	  "none"
-  Profile		  off
-  ParamWorkspaceSource	  "MATLABWorkspace"
-  AccelSystemTargetFile	  "accel.tlc"
-  AccelTemplateMakefile	  "accel_default_tmf"
-  AccelMakeCommand	  "make_rtw"
-  TryForcingSFcnDF	  off
-  Object {
-    $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
-    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "direct_3dn"
-    overrideMode_	    [0.0]
-    Array {
-      Type		      "Cell"
-      Dimension		      1
-      Cell		      "direct_3dn"
-      PropName		      "logAsSpecifiedByModels_"
-    }
-    Array {
-      Type		      "Cell"
-      Dimension		      1
-      Cell		      []
-      PropName		      "logAsSpecifiedByModelsSSIDs_"
-    }
-  }
-  RecordCoverage	  off
-  CovPath		  "/"
-  CovSaveName		  "covdata"
-  CovMetricSettings	  "dw"
-  CovNameIncrementing	  off
-  CovHtmlReporting	  on
-  CovForceBlockReductionOff on
-  CovEnableCumulative	  on
-  covSaveCumulativeToWorkspaceVar on
-  CovSaveSingleToWorkspaceVar on
-  CovCumulativeVarName	  "covCumulativeData"
-  CovCumulativeReport	  off
-  CovReportOnPause	  on
-  CovModelRefEnable	  "off"
-  CovExternalEMLEnable	  off
-  CovSFcnEnable		  on
-  CovBoundaryAbsTol	  0.000010
-  CovBoundaryRelTol	  0.010000
-  CovUseTimeInterval	  off
-  CovStartTime		  0
-  CovStopTime		  0
-  ExtModeBatchMode	  off
-  ExtModeEnableFloating	  on
-  ExtModeTrigType	  "manual"
-  ExtModeTrigMode	  "normal"
-  ExtModeTrigPort	  "1"
-  ExtModeTrigElement	  "any"
-  ExtModeTrigDuration	  1000
-  ExtModeTrigDurationFloating "auto"
-  ExtModeTrigHoldOff	  0
-  ExtModeTrigDelay	  0
-  ExtModeTrigDirection	  "rising"
-  ExtModeTrigLevel	  0
-  ExtModeArchiveMode	  "off"
-  ExtModeAutoIncOneShot	  off
-  ExtModeIncDirWhenArm	  off
-  ExtModeAddSuffixToVar	  off
-  ExtModeWriteAllDataToWs off
-  ExtModeArmWhenConnect	  on
-  ExtModeSkipDownloadWhenConnect off
-  ExtModeLogAll		  on
-  ExtModeAutoUpdateStatusClock on
-  BufferReuse		  on
-  ShowModelReferenceBlockVersion off
-  ShowModelReferenceBlockIO off
-  Array {
-    Type		    "Handle"
-    Dimension		    1
-    Simulink.ConfigSet {
-      $ObjectID		      8
-      Version		      "1.14.3"
-      Array {
-	Type			"Handle"
-	Dimension		9
-	Simulink.SolverCC {
-	  $ObjectID		  9
-	  Version		  "1.14.3"
-	  StartTime		  "0.0"
-	  StopTime		  "10.0"
-	  AbsTol		  "auto"
-	  FixedStep		  "auto"
-	  InitialStep		  "auto"
-	  MaxNumMinSteps	  "-1"
-	  MaxOrder		  5
-	  ZcThreshold		  "auto"
-	  ConsecutiveZCsStepRelTol "10*128*eps"
-	  MaxConsecutiveZCs	  "1000"
-	  ExtrapolationOrder	  4
-	  NumberNewtonIterations  1
-	  MaxStep		  "auto"
-	  MinStep		  "auto"
-	  MaxConsecutiveMinStep	  "1"
-	  RelTol		  "1e-3"
-	  SolverMode		  "Auto"
-	  EnableConcurrentExecution off
-	  ConcurrentTasks	  off
-	  Solver		  "ode45"
-	  SolverName		  "ode45"
-	  SolverJacobianMethodControl "auto"
-	  ShapePreserveControl	  "DisableAll"
-	  ZeroCrossControl	  "UseLocalSettings"
-	  ZeroCrossAlgorithm	  "Nonadaptive"
-	  AlgebraicLoopSolver	  "TrustRegion"
-	  SolverResetMethod	  "Fast"
-	  PositivePriorityOrder	  off
-	  AutoInsertRateTranBlk	  off
-	  SampleTimeConstraint	  "Unconstrained"
-	  InsertRTBMode		  "Whenever possible"
-	}
-	Simulink.DataIOCC {
-	  $ObjectID		  10
-	  Version		  "1.14.3"
-	  Decimation		  "1"
-	  ExternalInput		  "[t, u]"
-	  FinalStateName	  "xFinal"
-	  InitialState		  "xInitial"
-	  LimitDataPoints	  on
-	  MaxDataPoints		  "1000"
-	  LoadExternalInput	  off
-	  LoadInitialState	  off
-	  SaveFinalState	  off
-	  SaveCompleteFinalSimState off
-	  SaveFormat		  "StructureWithTime"
-	  SignalLoggingSaveFormat "Dataset"
-	  SaveOutput		  off
-	  SaveState		  off
-	  SignalLogging		  off
-	  DSMLogging		  off
-	  InspectSignalLogs	  off
-	  VisualizeSimOutput	  on
-	  SaveTime		  off
-	  ReturnWorkspaceOutputs  off
-	  StateSaveName		  "xout"
-	  TimeSaveName		  "tout"
-	  OutputSaveName	  "yout"
-	  SignalLoggingName	  "logsout"
-	  DSMLoggingName	  "dsmout"
-	  OutputOption		  "RefineOutputTimes"
-	  OutputTimes		  "[]"
-	  ReturnWorkspaceOutputsName "out"
-	  Refine		  "1"
-	}
-	Simulink.OptimizationCC {
-	  $ObjectID		  11
-	  Version		  "1.14.3"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    8
-	    Cell		    "BooleansAsBitfields"
-	    Cell		    "PassReuseOutputArgsAs"
-	    Cell		    "PassReuseOutputArgsThreshold"
-	    Cell		    "ZeroExternalMemoryAtStartup"
-	    Cell		    "ZeroInternalMemoryAtStartup"
-	    Cell		    "OptimizeModelRefInitCode"
-	    Cell		    "NoFixptDivByZeroProtection"
-	    Cell		    "UseSpecifiedMinMax"
-	    PropName		    "DisabledProps"
-	  }
-	  BlockReduction	  on
-	  BooleanDataType	  on
-	  ConditionallyExecuteInputs on
-	  InlineParams		  off
-	  UseDivisionForNetSlopeComputation "Off"
-	  UseFloatMulNetSlope	  off
-	  DefaultUnderspecifiedDataType	"double"
-	  UseSpecifiedMinMax	  off
-	  InlineInvariantSignals  off
-	  OptimizeBlockIOStorage  on
-	  BufferReuse		  on
-	  EnhancedBackFolding	  off
-	  CachingGlobalReferences off
-	  GlobalBufferReuse	  on
-	  StrengthReduction	  off
-	  ExpressionFolding	  on
-	  BooleansAsBitfields	  off
-	  BitfieldContainerType	  "uint_T"
-	  EnableMemcpy		  on
-	  MemcpyThreshold	  64
-	  PassReuseOutputArgsAs	  "Structure reference"
-	  ExpressionDepthLimit	  128
-	  FoldNonRolledExpr	  on
-	  LocalBlockOutputs	  on
-	  RollThreshold		  5
-	  SystemCodeInlineAuto	  off
-	  StateBitsets		  off
-	  DataBitsets		  off
-	  ActiveStateOutputEnumStorageType "Native Integer"
-	  UseTempVars		  off
-	  ZeroExternalMemoryAtStartup on
-	  ZeroInternalMemoryAtStartup on
-	  InitFltsAndDblsToZero	  off
-	  NoFixptDivByZeroProtection off
-	  EfficientFloat2IntCast  off
-	  EfficientMapNaN2IntZero on
-	  OptimizeModelRefInitCode off
-	  LifeSpan		  "inf"
-	  MaxStackSize		  "Inherit from target"
-	  BufferReusableBoundary  on
-	  SimCompilerOptimization "Off"
-	  AccelVerboseBuild	  off
-	  ParallelExecutionInRapidAccelerator on
-	}
-	Simulink.DebuggingCC {
-	  $ObjectID		  12
-	  Version		  "1.14.3"
-	  RTPrefix		  "error"
-	  ConsistencyChecking	  "none"
-	  ArrayBoundsChecking	  "none"
-	  SignalInfNanChecking	  "none"
-	  SignalRangeChecking	  "none"
-	  ReadBeforeWriteMsg	  "UseLocalSettings"
-	  WriteAfterWriteMsg	  "UseLocalSettings"
-	  WriteAfterReadMsg	  "UseLocalSettings"
-	  AlgebraicLoopMsg	  "warning"
-	  ArtificialAlgebraicLoopMsg "warning"
-	  SaveWithDisabledLinksMsg "warning"
-	  SaveWithParameterizedLinksMsg	"warning"
-	  CheckSSInitialOutputMsg on
-	  UnderspecifiedInitializationDetection	"Simplified"
-	  MergeDetectMultiDrivingBlocksExec "error"
-	  CheckExecutionContextPreStartOutputMsg off
-	  CheckExecutionContextRuntimeOutputMsg	off
-	  SignalResolutionControl "UseLocalSettings"
-	  BlockPriorityViolationMsg "warning"
-	  MinStepSizeMsg	  "warning"
-	  TimeAdjustmentMsg	  "none"
-	  MaxConsecutiveZCsMsg	  "error"
-	  MaskedZcDiagnostic	  "warning"
-	  IgnoredZcDiagnostic	  "warning"
-	  SolverPrmCheckMsg	  "none"
-	  InheritedTsInSrcMsg	  "warning"
-	  DiscreteInheritContinuousMsg "warning"
-	  MultiTaskDSMMsg	  "error"
-	  MultiTaskCondExecSysMsg "error"
-	  MultiTaskRateTransMsg	  "error"
-	  SingleTaskRateTransMsg  "none"
-	  TasksWithSamePriorityMsg "warning"
-	  SigSpecEnsureSampleTimeMsg "warning"
-	  CheckMatrixSingularityMsg "none"
-	  IntegerOverflowMsg	  "warning"
-	  Int32ToFloatConvMsg	  "warning"
-	  ParameterDowncastMsg	  "error"
-	  ParameterOverflowMsg	  "error"
-	  ParameterUnderflowMsg	  "none"
-	  ParameterPrecisionLossMsg "warning"
-	  ParameterTunabilityLossMsg "warning"
-	  FixptConstUnderflowMsg  "none"
-	  FixptConstOverflowMsg	  "none"
-	  FixptConstPrecisionLossMsg "none"
-	  UnderSpecifiedDataTypeMsg "none"
-	  UnnecessaryDatatypeConvMsg "none"
-	  VectorMatrixConversionMsg "none"
-	  InvalidFcnCallConnMsg	  "error"
-	  FcnCallInpInsideContextMsg "EnableAllAsError"
-	  SignalLabelMismatchMsg  "none"
-	  UnconnectedInputMsg	  "warning"
-	  UnconnectedOutputMsg	  "warning"
-	  UnconnectedLineMsg	  "warning"
-	  SFcnCompatibilityMsg	  "none"
-	  FrameProcessingCompatibilityMsg "error"
-	  UniqueDataStoreMsg	  "none"
-	  BusObjectLabelMismatch  "warning"
-	  RootOutportRequireBusObject "warning"
-	  AssertControl		  "UseLocalSettings"
-	  EnableOverflowDetection off
-	  ModelReferenceIOMsg	  "none"
-	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
-	  ModelReferenceVersionMismatchMessage "none"
-	  ModelReferenceIOMismatchMessage "none"
-	  ModelReferenceCSMismatchMessage "none"
-	  UnknownTsInhSupMsg	  "warning"
-	  ModelReferenceDataLoggingMessage "warning"
-	  ModelReferenceSymbolNameMessage "warning"
-	  ModelReferenceExtraNoncontSigs "error"
-	  StateNameClashWarn	  "none"
-	  SimStateInterfaceChecksumMismatchMsg "warning"
-	  SimStateOlderReleaseMsg "error"
-	  InitInArrayFormatMsg	  "warning"
-	  StrictBusMsg		  "ErrorLevel1"
-	  BusNameAdapt		  "WarnAndRepair"
-	  NonBusSignalsTreatedAsBus "none"
-	  LoggingUnavailableSignals "error"
-	  BlockIODiagnostic	  "none"
-	  SFUnusedDataAndEventsDiag "warning"
-	  SFUnexpectedBacktrackingDiag "warning"
-	  SFInvalidInputDataAccessInChartInitDiag "warning"
-	  SFNoUnconditionalDefaultTransitionDiag "warning"
-	  SFTransitionOutsideNaturalParentDiag "warning"
-	  SFUnconditionalTransitionShadowingDiag "warning"
-	  SFUndirectedBroadcastEventsDiag "warning"
-	  SFTransitionActionBeforeConditionDiag	"warning"
-	  IntegerSaturationMsg	  "warning"
-	}
-	Simulink.HardwareCC {
-	  $ObjectID		  13
-	  Version		  "1.14.3"
-	  ProdBitPerChar	  8
-	  ProdBitPerShort	  16
-	  ProdBitPerInt		  32
-	  ProdBitPerLong	  32
-	  ProdBitPerLongLong	  64
-	  ProdBitPerFloat	  32
-	  ProdBitPerDouble	  64
-	  ProdBitPerPointer	  64
-	  ProdLargestAtomicInteger "Char"
-	  ProdLargestAtomicFloat  "Float"
-	  ProdIntDivRoundTo	  "Zero"
-	  ProdEndianess		  "LittleEndian"
-	  ProdWordSize		  32
-	  ProdShiftRightIntArith  on
-	  ProdLongLongMode	  off
-	  ProdHWDeviceType	  "Specified"
-	  TargetBitPerChar	  8
-	  TargetBitPerShort	  16
-	  TargetBitPerInt	  32
-	  TargetBitPerLong	  32
-	  TargetBitPerLongLong	  64
-	  TargetBitPerFloat	  32
-	  TargetBitPerDouble	  64
-	  TargetBitPerPointer	  32
-	  TargetLargestAtomicInteger "Char"
-	  TargetLargestAtomicFloat "None"
-	  TargetShiftRightIntArith on
-	  TargetLongLongMode	  off
-	  TargetIntDivRoundTo	  "Undefined"
-	  TargetEndianess	  "Unspecified"
-	  TargetWordSize	  32
-	  TargetTypeEmulationWarnSuppressLevel 0
-	  TargetPreprocMaxBitsSint 32
-	  TargetPreprocMaxBitsUint 32
-	  TargetHWDeviceType	  "Specified"
-	  TargetUnknown		  off
-	  ProdEqTarget		  on
-	}
-	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
-	  Version		  "1.14.3"
-	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
-	  CheckModelReferenceTargetMessage "error"
-	  EnableParallelModelReferenceBuilds off
-	  ParallelModelReferenceErrorOnInvalidPool on
-	  ParallelModelReferenceMATLABWorkerInit "None"
-	  ModelReferenceNumInstancesAllowed "Multi"
-	  PropagateVarSize	  "Infer from blocks in model"
-	  ModelReferencePassRootInputsByReference on
-	  ModelReferenceMinAlgLoopOccurrences off
-	  PropagateSignalLabelsOutOfModel off
-	  SupportModelReferenceSimTargetCustomCode off
-	}
-	Simulink.SFSimCC {
-	  $ObjectID		  15
-	  Version		  "1.14.3"
-	  SFSimEnableDebug	  on
-	  SFSimOverflowDetection  on
-	  SFSimEcho		  on
-	  SimBlas		  on
-	  SimCtrlC		  on
-	  SimExtrinsic		  on
-	  SimIntegrity		  on
-	  SimUseLocalCustomCode	  off
-	  SimParseCustomCode	  on
-	  SimBuildMode		  "sf_incremental_build"
-	  SimGenImportedTypeDefs  off
-	}
-	Simulink.RTWCC {
-	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
-	  Version		  "1.14.3"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    13
-	    Cell		    "IncludeHyperlinkInReport"
-	    Cell		    "GenerateTraceInfo"
-	    Cell		    "GenerateTraceReport"
-	    Cell		    "GenerateTraceReportSl"
-	    Cell		    "GenerateTraceReportSf"
-	    Cell		    "GenerateTraceReportEml"
-	    Cell		    "PortableWordSizes"
-	    Cell		    "GenerateWebview"
-	    Cell		    "GenerateCodeMetricsReport"
-	    Cell		    "GenerateCodeReplacementReport"
-	    Cell		    "GenerateMissedCodeReplacementReport"
-	    Cell		    "GenerateErtSFunction"
-	    Cell		    "CreateSILPILBlock"
-	    PropName		    "DisabledProps"
-	  }
-	  SystemTargetFile	  "grt.tlc"
-	  TLCOptions		  ""
-	  GenCodeOnly		  off
-	  MakeCommand		  "make_rtw"
-	  GenerateMakefile	  on
-	  PackageGeneratedCodeAndArtifacts off
-	  PackageName		  ""
-	  TemplateMakefile	  "grt_default_tmf"
-	  PostCodeGenCommand	  ""
-	  Description		  ""
-	  GenerateReport	  off
-	  SaveLog		  off
-	  RTWVerbose		  on
-	  RetainRTWFile		  off
-	  ProfileTLC		  off
-	  TLCDebug		  off
-	  TLCCoverage		  off
-	  TLCAssert		  off
-	  ProcessScriptMode	  "Default"
-	  ConfigurationMode	  "Optimized"
-	  ProcessScript		  ""
-	  ConfigurationScript	  ""
-	  ConfigAtBuild		  off
-	  RTWUseLocalCustomCode	  off
-	  RTWUseSimCustomCode	  off
-	  CustomSourceCode	  ""
-	  CustomHeaderCode	  ""
-	  CustomInclude		  ""
-	  CustomSource		  ""
-	  CustomLibrary		  ""
-	  CustomInitializer	  ""
-	  CustomTerminator	  ""
-	  Toolchain		  "Automatically locate an installed toolchain"
-	  BuildConfiguration	  "Faster Builds"
-	  IncludeHyperlinkInReport off
-	  LaunchReport		  off
-	  PortableWordSizes	  off
-	  CreateSILPILBlock	  "None"
-	  CodeExecutionProfiling  off
-	  CodeExecutionProfileVariable "executionProfile"
-	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation off
-	  SILDebugging		  off
-	  TargetLang		  "C"
-	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
-	  IncludeERTFirstTime	  off
-	  GenerateTraceInfo	  off
-	  GenerateTraceReport	  off
-	  GenerateTraceReportSl	  off
-	  GenerateTraceReportSf	  off
-	  GenerateTraceReportEml  off
-	  GenerateCodeInfo	  off
-	  GenerateWebview	  off
-	  GenerateCodeMetricsReport off
-	  GenerateCodeReplacementReport	off
-	  RTWCompilerOptimization "Off"
-	  RTWCustomCompilerOptimizations ""
-	  CheckMdlBeforeBuild	  "Off"
-	  CustomRebuildMode	  "OnUpdate"
-	  DataInitializer	  ""
-	  SharedConstantsCachingThreshold 1024
-	  Array {
-	    Type		    "Handle"
-	    Dimension		    2
-	    Simulink.CodeAppCC {
-	      $ObjectID		      17
-	      Version		      "1.14.3"
-	      Array {
-		Type			"Cell"
-		Dimension		24
-		Cell			"IgnoreCustomStorageClasses"
-		Cell			"ParameterTuningSideEffectCode"
-		Cell			"IgnoreTestpoints"
-		Cell			"InsertBlockDesc"
-		Cell			"InsertPolySpaceComments"
-		Cell			"SFDataObjDesc"
-		Cell			"MATLABFcnDesc"
-		Cell			"SimulinkDataObjDesc"
-		Cell			"DefineNamingRule"
-		Cell			"SignalNamingRule"
-		Cell			"ParamNamingRule"
-		Cell			"InternalIdentifier"
-		Cell			"InlinedPrmAccess"
-		Cell			"CustomSymbolStr"
-		Cell			"CustomSymbolStrGlobalVar"
-		Cell			"CustomSymbolStrType"
-		Cell			"CustomSymbolStrField"
-		Cell			"CustomSymbolStrFcn"
-		Cell			"CustomSymbolStrFcnArg"
-		Cell			"CustomSymbolStrBlkIO"
-		Cell			"CustomSymbolStrTmpVar"
-		Cell			"CustomSymbolStrMacro"
-		Cell			"CustomSymbolStrUtil"
-		Cell			"ReqsInCode"
-		PropName		"DisabledProps"
-	      }
-	      ForceParamTrailComments off
-	      GenerateComments	      on
-	      CommentStyle	      "Auto"
-	      IgnoreCustomStorageClasses on
-	      IgnoreTestpoints	      off
-	      IncHierarchyInIds	      off
-	      MaxIdLength	      31
-	      PreserveName	      off
-	      PreserveNameWithParent  off
-	      ShowEliminatedStatement off
-	      OperatorAnnotations     off
-	      IncAutoGenComments      off
-	      SimulinkDataObjDesc     off
-	      SFDataObjDesc	      off
-	      MATLABFcnDesc	      off
-	      IncDataTypeInIds	      off
-	      MangleLength	      1
-	      CustomSymbolStrGlobalVar "$R$N$M"
-	      CustomSymbolStrType     "$N$R$M_T"
-	      CustomSymbolStrField    "$N$M"
-	      CustomSymbolStrFcn      "$R$N$M$F"
-	      CustomSymbolStrFcnArg   "rt$I$N$M"
-	      CustomSymbolStrBlkIO    "rtb_$N$M"
-	      CustomSymbolStrTmpVar   "$N$M"
-	      CustomSymbolStrMacro    "$R$N$M"
-	      CustomSymbolStrUtil     "$N$C"
-	      DefineNamingRule	      "None"
-	      ParamNamingRule	      "None"
-	      SignalNamingRule	      "None"
-	      InsertBlockDesc	      off
-	      InsertPolySpaceComments off
-	      SimulinkBlockComments   on
-	      MATLABSourceComments    off
-	      EnableCustomComments    off
-	      InternalIdentifier      "Shortened"
-	      InlinedPrmAccess	      "Literals"
-	      ReqsInCode	      off
-	      UseSimReservedNames     off
-	    }
-	    Simulink.GRTTargetCC {
-	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
-	      Version		      "1.14.3"
-	      Array {
-		Type			"Cell"
-		Dimension		12
-		Cell			"IncludeMdlTerminateFcn"
-		Cell			"SuppressErrorStatus"
-		Cell			"ERTCustomFileBanners"
-		Cell			"GenerateSampleERTMain"
-		Cell			"GenerateTestInterfaces"
-		Cell			"ModelStepFunctionPrototypeControlCompliant"
-		Cell			"GenerateAllocFcn"
-		Cell			"PurelyIntegerCode"
-		Cell			"SupportComplex"
-		Cell			"SupportAbsoluteTime"
-		Cell			"SupportContinuousTime"
-		Cell			"SupportNonInlinedSFcns"
-		PropName		"DisabledProps"
-	      }
-	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
-	      TargetLibSuffix	      ""
-	      TargetPreCompLibLocation ""
-	      GenFloatMathFcnCalls    "NOT IN USE"
-	      TargetLangStandard      "C89/C90 (ANSI)"
-	      CodeReplacementLibrary  "None"
-	      UtilityFuncGeneration   "Auto"
-	      ERTMultiwordTypeDef     "System defined"
-	      ERTMultiwordLength      256
-	      MultiwordLength	      2048
-	      GenerateFullHeader      on
-	      GenerateSampleERTMain   off
-	      GenerateTestInterfaces  off
-	      ModelReferenceCompliant on
-	      ParMdlRefBuildCompliant on
-	      CompOptLevelCompliant   on
-	      ConcurrentExecutionCompliant on
-	      IncludeMdlTerminateFcn  on
-	      GeneratePreprocessorConditionals "Use local settings"
-	      CombineOutputUpdateFcns on
-	      CombineSignalStateStructs	off
-	      SuppressErrorStatus     off
-	      ERTFirstTimeCompliant   off
-	      IncludeFileDelimiter    "Auto"
-	      ERTCustomFileBanners    off
-	      SupportAbsoluteTime     on
-	      LogVarNameModifier      "rt_"
-	      MatFileLogging	      on
-	      MultiInstanceERTCode    off
-	      CodeInterfacePackaging  "Nonreusable function"
-	      SupportNonFinite	      on
-	      SupportComplex	      on
-	      PurelyIntegerCode	      off
-	      SupportContinuousTime   on
-	      SupportNonInlinedSFcns  on
-	      SupportVariableSizeSignals off
-	      EnableShiftOperators    on
-	      ParenthesesLevel	      "Nominal"
-	      CastingMode	      "Nominal"
-	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
-	      ModelStepFunctionPrototypeControlCompliant off
-	      CPPClassGenCompliant    on
-	      AutosarCompliant	      off
-	      GRTInterface	      off
-	      GenerateAllocFcn	      off
-	      GenerateSharedConstants on
-	      UseMalloc		      off
-	      ExtMode		      off
-	      ExtModeStaticAlloc      off
-	      ExtModeTesting	      off
-	      ExtModeStaticAllocSize  1000000
-	      ExtModeTransport	      0
-	      ExtModeMexFile	      "ext_comm"
-	      ExtModeIntrfLevel	      "Level1"
-	      RTWCAPISignals	      off
-	      RTWCAPIParams	      off
-	      RTWCAPIStates	      off
-	      RTWCAPIRootIO	      off
-	      GenerateASAP2	      off
-	      MultiInstanceErrorCode  "Error"
-	    }
-	    PropName		    "Components"
-	  }
-	}
-	hdlcoderui.hdlcc {
-	  $ObjectID		  19
-	  Version		  "1.14.3"
-	  Description		  "HDL Coder custom configuration component"
-	  Name			  "HDL Coder"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    1
-	    Cell		    " "
-	    PropName		    "HDLConfigFile"
-	  }
-	  HDLCActiveTab		  "0"
-	}
-	PropName		"Components"
-      }
-      Name		      "Configuration"
-      CurrentDlgPage	      "Data Import//Export"
-      ConfigPrmDlgPosition     [ 135, 33, 1231, 712 ] 
-    }
-    PropName		    "ConfigurationSets"
-  }
-  Simulink.ConfigSet {
-    $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
-  }
-  Object {
-    $PropName		    "DataTransfer"
-    $ObjectID		    20
-    $ClassName		    "Simulink.GlobalDataTransfer"
-    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
-    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
-    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
-    DefaultExtrapolationMethodBetweenContTasks "None"
-    AutoInsertRateTranBlk   [0]
-  }
-  ExplicitPartitioning	  off
-  BlockDefaults {
-    ForegroundColor	    "black"
-    BackgroundColor	    "white"
-    DropShadow		    off
-    NamePlacement	    "normal"
-    FontName		    "Helvetica"
-    FontSize		    10
-    FontWeight		    "normal"
-    FontAngle		    "normal"
-    ShowName		    on
-    BlockRotation	    0
-    BlockMirror		    off
-  }
-  AnnotationDefaults {
-    HorizontalAlignment	    "center"
-    VerticalAlignment	    "middle"
-    ForegroundColor	    "black"
-    BackgroundColor	    "white"
-    DropShadow		    off
-    FontName		    "Helvetica"
-    FontSize		    10
-    FontWeight		    "normal"
-    FontAngle		    "normal"
-    UseDisplayTextAsClickCallback off
-  }
-  LineDefaults {
-    FontName		    "Helvetica"
-    FontSize		    9
-    FontWeight		    "normal"
-    FontAngle		    "normal"
-  }
-  MaskDefaults {
-    SelfModifiable	    "off"
-    IconFrame		    "on"
-    IconOpaque		    "on"
-    RunInitForIconRedraw    "off"
-    IconRotate		    "none"
-    PortRotate		    "default"
-    IconUnits		    "autoscale"
-  }
-  MaskParameterDefaults {
-    Evaluate		    "on"
-    Tunable		    "on"
-    NeverSave		    "off"
-    Internal		    "off"
-    ReadOnly		    "off"
-    Enabled		    "on"
-    Visible		    "on"
-    ToolTip		    "on"
-  }
-  BlockParameterDefaults {
-    Block {
-      BlockType		      Mux
-      Inputs		      "4"
-      DisplayOption	      "none"
-      UseBusObject	      off
-      BusObject		      "BusObject"
-      NonVirtualBus	      off
-    }
-    Block {
-      BlockType		      S-Function
-      FunctionName	      "system"
-      SFunctionModules	      "''"
-      PortCounts	      "[]"
-      SFunctionDeploymentMode off
-    }
-    Block {
-      BlockType		      Sin
-      SineType		      "Time based"
-      TimeSource	      "Use simulation time"
-      Amplitude		      "1"
-      Bias		      "0"
-      Frequency		      "1"
-      Phase		      "0"
-      Samples		      "10"
-      Offset		      "0"
-      SampleTime	      "-1"
-      VectorParams1D	      on
-    }
-  }
-  System {
-    Name		    "m3dscope_new"
-    Location		    [494, 97, 1164, 517]
-    Open		    on
-    ModelBrowserVisibility  off
-    ModelBrowserWidth	    200
-    ScreenColor		    "white"
-    PaperOrientation	    "landscape"
-    PaperPositionMode	    "auto"
-    PaperType		    "usletter"
-    PaperUnits		    "inches"
-    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-    TiledPageScale	    1
-    ShowPageBoundaries	    off
-    ZoomFactor		    "100"
-    ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "11"
-    Block {
-      BlockType		      S-Function
-      Name		      "3D Graph"
-      SID		      "1"
-      Ports		      [1]
-      Position		      [505, 67, 540, 143]
-      ZOrder		      7
-      CopyFcn		      "if exist('sfun3d','file'), sfun3d([],[],[],'CopyBlock'); end"
-      DeleteFcn		      "if exist('sfun3d','file'), sfun3d([],[],[],'DeleteBlock'); end"
-      LoadFcn		      "if exist('sfun3d','file'), sfun3d([],[],[],'LoadBlock'); end"
-      NameChangeFcn	      "if exist('sfun3d','file'), sfun3d([],[],[],'NameChange'); end"
-      FunctionName	      "sfun3d"
-      Parameters	      "ax,T,np,cp,gd,ls,mk,mx,hd,tb"
-      EnableBusSupport	      off
-      Object {
-	$PropName		"MaskObject"
-	$ObjectID		21
-	$ClassName		"Simulink.Mask"
-	Type			"3D Graph"
-	Description		"This block plots the position of several points in the XYZ space. The input contains the coordinates of"
-	" all the points (x1,y1,z1,x2,y2,z2,...). \nThe number of moving points (lines), the XYZ ranges, sampling time, camera"
-	" position, and grid (among other things) can be set as mask parameters."
-	Help			"This block plots the position of several points in the XYZ space. The input contains the coordinates of all t"
-	"he points (x1,y1,z1,x2,y2,z2,...). \nThe number of moving points (lines), the XYZ ranges, sampling time, camera posit"
-	"ion, and grid (among other things) can be set as mask parameters."
-	Display			"plot([.05 .95 .95 .05 .05],[.45 .45 .95 .95 .45], 0.5+cos(0:0.1:2*pi)*0.3,0.7+sin(0:0.1:2*pi)*0.2)"
-	IconUnits		"normalized"
-	Array {
-	  Type			  "Simulink.MaskParameter"
-	  Dimension		  10
-	  Object {
-	    $ObjectID		    22
-	    Type		    "edit"
-	    Name		    "np"
-	    Prompt		    "Number of moving points (lines)"
-	    Value		    "2"
-	  }
-	  Object {
-	    $ObjectID		    23
-	    Type		    "edit"
-	    Name		    "ax"
-	    Prompt		    "Range: [xmin xmax  ymin ymax zmin zmax]"
-	    Value		    "[-3 3 -3 3 -3 3]"
-	  }
-	  Object {
-	    $ObjectID		    24
-	    Type		    "edit"
-	    Name		    "mx"
-	    Prompt		    "Max number of points in each line"
-	    Value		    "1e4"
-	  }
-	  Object {
-	    $ObjectID		    25
-	    Type		    "edit"
-	    Name		    "T"
-	    Prompt		    "Sampling Time"
-	    Value		    "0.1"
-	  }
-	  Object {
-	    $ObjectID		    26
-	    Type		    "edit"
-	    Name		    "cp"
-	    Prompt		    "Camera position (use [0 0 1] for 2D XY view)"
-	    Value		    "[3 2 1]"
-	  }
-	  Object {
-	    $ObjectID		    27
-	    Type		    "checkbox"
-	    Name		    "gd"
-	    Prompt		    "Grid (on|off)"
-	    Value		    "on"
-	  }
-	  Object {
-	    $ObjectID		    28
-	    Type		    "checkbox"
-	    Name		    "hd"
-	    Prompt		    "HeadMarkers (on|off)"
-	    Value		    "off"
-	  }
-	  Object {
-	    $ObjectID		    29
-	    Type		    "checkbox"
-	    Name		    "tb"
-	    Prompt		    "Toolbar (on|off)"
-	    Value		    "off"
-	  }
-	  Object {
-	    $ObjectID		    30
-	    Type		    "popup"
-	    Array {
-	      Type		      "Cell"
-	      Dimension		      5
-	      Cell		      "-"
-	      Cell		      "--"
-	      Cell		      ":"
-	      Cell		      "-."
-	      Cell		      "none"
-	      PropName		      "TypeOptions"
-	    }
-	    Name		    "ls"
-	    Prompt		    "LineStyle"
-	    Value		    "-"
-	    Evaluate		    "off"
-	    Tunable		    "off"
-	  }
-	  Object {
-	    $ObjectID		    31
-	    Type		    "popup"
-	    Array {
-	      Type		      "Cell"
-	      Dimension		      14
-	      Cell		      "none"
-	      Cell		      "."
-	      Cell		      "+"
-	      Cell		      "o"
-	      Cell		      "*"
-	      Cell		      "x"
-	      Cell		      "square"
-	      Cell		      "diamond"
-	      Cell		      "v"
-	      Cell		      "^"
-	      Cell		      ">"
-	      Cell		      "<"
-	      Cell		      "pentagram"
-	      Cell		      "hexagram"
-	      PropName		      "TypeOptions"
-	    }
-	    Name		    "mk"
-	    Prompt		    "LineMarker"
-	    Value		    "none"
-	    Evaluate		    "off"
-	    Tunable		    "off"
-	  }
-	  PropName		  "Parameters"
-	}
-      }
-    }
-    Block {
-      BlockType		      Mux
-      Name		      "Mux"
-      SID		      "2"
-      Ports		      [3, 1]
-      Position		      [205, 69, 210, 101]
-      ZOrder		      24
-      ShowName		      off
-      Inputs		      "3"
-      DisplayOption	      "bar"
-      Port {
-	PortNumber		1
-	Name			"Point1: XYZ"
-	RTWStorageClass		"Auto"
-	DataLoggingNameMode	"SignalName"
-      }
-    }
-    Block {
-      BlockType		      Mux
-      Name		      "Mux1"
-      SID		      "3"
-      Ports		      [3, 1]
-      Position		      [370, 105, 375, 135]
-      ZOrder		      23
-      ShowName		      off
-      Inputs		      "3"
-      DisplayOption	      "bar"
-      Port {
-	PortNumber		1
-	Name			"Point2: XYZ"
-	RTWStorageClass		"Auto"
-	DataLoggingNameMode	"SignalName"
-      }
-    }
-    Block {
-      BlockType		      Mux
-      Name		      "Mux3"
-      SID		      "4"
-      Ports		      [2, 1]
-      Position		      [455, 68, 460, 137]
-      ZOrder		      22
-      ShowName		      off
-      Inputs		      "2"
-      DisplayOption	      "bar"
-    }
-    Block {
-      BlockType		      Sin
-      Name		      "Sine1"
-      SID		      "5"
-      Ports		      [0, 1]
-      Position		      [70, 60, 100, 90]
-      ZOrder		      21
-      SampleTime	      "0"
-    }
-    Block {
-      BlockType		      Sin
-      Name		      "Sine2"
-      SID		      "6"
-      Ports		      [0, 1]
-      Position		      [245, 95, 275, 125]
-      ZOrder		      20
-      Amplitude		      "2"
-      Frequency		      "2"
-      SampleTime	      "0"
-    }
-    Block {
-      BlockType		      Sin
-      Name		      "Sine3"
-      SID		      "7"
-      Ports		      [0, 1]
-      Position		      [110, 70, 140, 100]
-      ZOrder		      19
-      Phase		      "pi/2"
-      SampleTime	      "0"
-    }
-    Block {
-      BlockType		      Sin
-      Name		      "Sine4"
-      SID		      "8"
-      Ports		      [0, 1]
-      Position		      [285, 105, 315, 135]
-      ZOrder		      18
-      Amplitude		      "2"
-      Frequency		      "2"
-      Phase		      "pi/2"
-      SampleTime	      "0"
-    }
-    Block {
-      BlockType		      Sin
-      Name		      "Sine5"
-      SID		      "9"
-      Ports		      [0, 1]
-      Position		      [150, 80, 180, 110]
-      ZOrder		      17
-      Amplitude		      "1.5"
-      Frequency		      "1.2"
-      Phase		      "pi/2"
-      SampleTime	      "0"
-    }
-    Block {
-      BlockType		      Sin
-      Name		      "Sine6"
-      SID		      "10"
-      Ports		      [0, 1]
-      Position		      [320, 115, 350, 145]
-      ZOrder		      16
-      Amplitude		      "2.5"
-      Frequency		      "2.2"
-      Phase		      "pi/2"
-      SampleTime	      "0"
-    }
-    Line {
-      Name		      "Point1: XYZ"
-      ZOrder		      1
-      Labels		      [0, 1]
-      SrcBlock		      "Mux"
-      SrcPort		      1
-      DstBlock		      "Mux3"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      2
-      SrcBlock		      "Sine1"
-      SrcPort		      1
-      DstBlock		      "Mux"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      3
-      SrcBlock		      "Sine3"
-      SrcPort		      1
-      DstBlock		      "Mux"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      4
-      SrcBlock		      "Sine5"
-      SrcPort		      1
-      DstBlock		      "Mux"
-      DstPort		      3
-    }
-    Line {
-      Name		      "Point2: XYZ"
-      ZOrder		      5
-      Labels		      [0, 0]
-      SrcBlock		      "Mux1"
-      SrcPort		      1
-      DstBlock		      "Mux3"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      6
-      SrcBlock		      "Sine2"
-      SrcPort		      1
-      DstBlock		      "Mux1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      7
-      SrcBlock		      "Sine6"
-      SrcPort		      1
-      DstBlock		      "Mux1"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      8
-      SrcBlock		      "Sine4"
-      SrcPort		      1
-      DstBlock		      "Mux1"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      10
-      SrcBlock		      "Mux3"
-      SrcPort		      1
-      DstBlock		      "3D Graph"
-      DstPort		      1
-    }
-    Annotation {
-      SID		      "11"
-      Name		      "New 3DScope usage example with two moving points (2014b+). Copyright 2017 The MathWorks, Inc."
-      Position		      [72, 184, 546, 199]
-      InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
-      FixedWidth	      off
-      HorizontalAlignment     "left"
-      VerticalAlignment	      "top"
-      ZOrder		      -1
-    }
-  }
+  Version  26.2
+  Description "Simulink model saved in R2026b"
 }
+__MWOPC_PACKAGE_BEGIN__ R2026b
+__MWOPC_PART_BEGIN__ /[Content_Types].xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default ContentType="application/vnd.mathworks.simulink.configSetInfo+json" Extension="json"/>
+  <Default ContentType="application/vnd.openxmlformats-package.relationships+xml" Extension="rels"/>
+  <Default ContentType="application/vnd.mathworks.simulink.mdl+xml" Extension="xml"/>
+  <Override ContentType="application/vnd.openxmlformats-package.core-properties+xml" PartName="/metadata/coreProperties.xml"/>
+  <Override ContentType="application/vnd.mathworks.package.coreProperties+xml" PartName="/metadata/mwcoreProperties.xml"/>
+  <Override ContentType="application/vnd.mathworks.package.corePropertiesExtension+xml" PartName="/metadata/mwcorePropertiesExtension.xml"/>
+  <Override ContentType="application/vnd.mathworks.package.corePropertiesReleaseInfo+xml" PartName="/metadata/mwcorePropertiesReleaseInfo.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.configSet+json" PartName="/simulink/configSet0.json"/>
+  <Override ContentType="application/vnd.mathworks.simulink.graphicalInterface+json" PartName="/simulink/graphicalInterface.json"/>
+  <Override ContentType="application/vnd.mathworks.simulink.hdlparams+xml" PartName="/simulink/hdlParams.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.mf0+xml" PartName="/simulink/modelDictionary.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.pluginParameters+json" PartName="/simulink/plugins/SimscapeModelParametersPlugin.json"/>
+  <Override ContentType="application/vnd.mathworks.simulink.ScheduleCore+xml" PartName="/simulink/ScheduleCore.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.ScheduleEditor+xml" PartName="/simulink/ScheduleEditor.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.blockDiagram+xml" PartName="/simulink/windowsInfo.xml"/>
+</Types>
+
+__MWOPC_PART_BEGIN__ /_rels/.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="blockDiagram" Target="simulink/blockdiagram.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/blockDiagram"/>
+  <Relationship Id="blockDiagramDefaults" Target="simulink/bddefaults.xml" Type="http://schemas.mathworks.com/simulink/2017/relationships/blockDiagramDefaults"/>
+  <Relationship Id="configSetInfo" Target="simulink/configSetInfo.json" Type="http://schemas.mathworks.com/simulink/2014/relationships/configSetInfo"/>
+  <Relationship Id="modelDictionary" Target="simulink/modelDictionary.xml" Type="http://schemas.mathworks.com/simulinkModel/2016/relationships/modelDictionary"/>
+  <Relationship Id="rId1" Target="metadata/mwcoreProperties.xml" Type="http://schemas.mathworks.com/package/2012/relationships/coreProperties"/>
+  <Relationship Id="rId2" Target="metadata/mwcorePropertiesExtension.xml" Type="http://schemas.mathworks.com/package/2014/relationships/corePropertiesExtension"/>
+  <Relationship Id="rId3" Target="metadata/mwcorePropertiesReleaseInfo.xml" Type="http://schemas.mathworks.com/package/2019/relationships/corePropertiesReleaseInfo"/>
+  <Relationship Id="rId4" Target="metadata/coreProperties.xml" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cp:category>model</cp:category>
+  <dcterms:created xsi:type="dcterms:W3CDTF">2015-11-27T03:53:08Z</dcterms:created>
+  <dc:creator>gcampa</dc:creator>
+  <cp:lastModifiedBy>gcampa</cp:lastModifiedBy>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-02-25T02:28:26Z</dcterms:modified>
+  <cp:revision>25.6</cp:revision>
+  <cp:version>R2026b</cp:version>
+</cp:coreProperties>
+
+__MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<mwcoreProperties xmlns="http://schemas.mathworks.com/package/2012/coreProperties">
+  <contentType>application/vnd.mathworks.simulink.model</contentType>
+  <contentTypeFriendlyName>Simulink Model</contentTypeFriendlyName>
+  <matlabRelease>R2026b</matlabRelease>
+</mwcoreProperties>
+
+__MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<mwcoreProperties xmlns="http://schemas.mathworks.com/package/2014/corePropertiesExtension">
+  <uuid>ff1087bd-cc5c-466c-a055-091d1f0a4812</uuid>
+</mwcoreProperties>
+
+__MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Version information for MathWorks R2026b Release -->
+<MathWorks_version_info>
+  <version>26.2.0.3143068</version>
+  <release>R2026b</release>
+  <description>Prerelease</description>
+  <date>Jan 23 2026</date>
+  <checksum>504774354</checksum>
+</MathWorks_version_info>
+
+__MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="ScheduleCore" Target="ScheduleCore.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleCore"/>
+  <Relationship Id="ScheduleEditor" Target="ScheduleEditor.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleEditor"/>
+  <Relationship Id="SimscapeModelParametersPlugin" Target="plugins/SimscapeModelParametersPlugin.json" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/pluginParameters"/>
+  <Relationship Id="graphicalInterface" Target="graphicalInterface.json" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/graphicalInterface"/>
+  <Relationship Id="hdlParams" Target="hdlParams.xml" Type="http://schemas.mathworks.com/simulink/2021/relationships/hdlParams"/>
+  <Relationship Id="system_root" Target="systems/system_root.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+  <Relationship Id="windowsInfo" Target="windowsInfo.xml" Type="http://schemas.mathworks.com/simulinkModel/2019/relationships/windowsInfo"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /simulink/_rels/configSetInfo.json.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="configSet0" Target="configSet0.json" Type="http://schemas.mathworks.com/simulink/2014/relationships/configSet"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /simulink/bddefaults.xml
+<?xml version="1.0" encoding="utf-8"?>
+<BlockDiagramDefaults>
+  <AnnotationDefaults>
+    <P Name="HorizontalAlignment">center</P>
+    <P Name="VerticalAlignment">middle</P>
+  </AnnotationDefaults>
+  <MaskDefaults SelfModifiable="off">
+    <Display IconFrame="on" IconOpaque="opaque" RunInitForIconRedraw="analyze" IconRotate="none" PortRotate="default" IconUnits="autoscale"/>
+    <MaskParameter Evaluate="on" Tunable="on" NeverSave="off" Internal="off" ReadOnly="off" Enabled="on" Visible="on" ToolTip="on"/>
+    <DialogControl>
+      <ControlOptions Visible="on" Enabled="on" Row="new" HorizontalStretch="on" PromptLocation="top" Orientation="horizontal" Scale="linear" TextType="Plain Text" Expand="off" ShowFilter="on" ShowParameterName="on" WordWrap="on" AlignPrompts="off"/>
+    </DialogControl>
+  </MaskDefaults>
+</BlockDiagramDefaults>
+
+__MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
+<?xml version="1.0" encoding="utf-8"?>
+<ModelInformation Version="1.0">
+  <Model>
+    <P Name="ModelUUID">870a49d7-a96c-426e-b6b2-a68e0da919d4</P>
+    <P Name="LastSavedArchitecture">win64</P>
+    <ConfigManagerSettings>
+      <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
+      <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:25.6&gt;</P>
+    </ConfigManagerSettings>
+    <SimulationSettings>
+      <P Name="SimulationMode">normal</P>
+      <Object PropName="DataLoggingOverride" ObjectID="1" ClassName="Simulink.SimulationData.ModelLoggingInfo">
+        <P Name="model_" Class="char">$bdroot</P>
+        <P Name="overrideMode_" Class="double">0.0</P>
+        <Array PropName="logAsSpecifiedByModels_" Type="Cell" Dimension="1*1">
+          <Cell Class="char">$bdroot</Cell>
+        </Array>
+        <Array PropName="logAsSpecifiedByModelsSSIDs_" Type="Cell" Dimension="1*1">
+          <Cell Class="double">[]</Cell>
+        </Array>
+      </Object>
+    </SimulationSettings>
+    <EngineSettings>
+      <P Name="ConfigurableSubsystemUsage">warning</P>
+    </EngineSettings>
+    <ConcurrentExecutionSettings>
+      <Object PropName="DataTransfer" ObjectID="2" ClassName="Simulink.GlobalDataTransfer">
+        <P Name="DefaultTransitionBetweenSyncTasks" Class="char">Ensure deterministic transfer (maximum delay)</P>
+        <P Name="DefaultTransitionBetweenAsyncTasks" Class="char">Ensure data integrity only</P>
+        <P Name="DefaultTransitionBetweenContTasks" Class="char">Ensure deterministic transfer (minimum delay)</P>
+        <P Name="DefaultExtrapolationMethodBetweenContTasks" Class="char">None</P>
+      </Object>
+    </ConcurrentExecutionSettings>
+    <System Ref="system_root"/>
+  </Model>
+</ModelInformation>
+
+__MWOPC_PART_BEGIN__ /simulink/configSet0.json
+{
+    "_id":"1",
+    "_mw_element_name":"ConfigSet",
+    "_mw_element_type":"COSObject",
+    "_object_class":"Simulink.ConfigSet",
+    "_properties":{
+        "Components":{
+            "_array_class":"Simulink.ConfigComponent",
+            "_elements":[
+                {
+                    "_id":"2",
+                    "_object_class":"Simulink.SolverCC",
+                    "_properties":{
+                        "AlgebraicLoopSolver":"TrustRegion",
+                        "EnableMultiTasking":"on",
+                        "ODENIntegrationMethod":"ode3",
+                        "SolverName":"ode45",
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"3",
+                    "_object_class":"Simulink.DataIOCC",
+                    "_properties":{
+                        "DSMLogging":"off",
+                        "LimitDataPoints":"on",
+                        "ReturnWorkspaceOutputs":"off",
+                        "SaveFormat":"StructureWithTime",
+                        "SaveOutput":"off",
+                        "SaveTime":"off",
+                        "SignalLogging":"off",
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"4",
+                    "_object_class":"Simulink.OptimizationCC",
+                    "_properties":{
+                        "LifeSpan":"inf",
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"5",
+                    "_object_class":"Simulink.DebuggingCC",
+                    "_properties":{
+                        "ArithmeticOperatorsInVariantConditions":"warning",
+                        "SFExecutionAtInitializationDiag":"none",
+                        "SFNoUnconditionalDefaultTransitionDiag":"warning",
+                        "SFUnexpectedBacktrackingDiag":"warning",
+                        "UnconnectedInputMsg":"warning",
+                        "UnconnectedLineMsg":"warning",
+                        "UnconnectedOutputMsg":"warning",
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"6",
+                    "_object_class":"Simulink.HardwareCC",
+                    "_properties":{
+                        "ProdBitPerPtrDiffT":32,
+                        "ProdBitPerSizeT":32,
+                        "ProdHWDeviceType":"Specified",
+                        "ProdWordSize":32,
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"7",
+                    "_object_class":"Simulink.ModelReferenceCC",
+                    "_properties":{
+                        "PropagateSignalLabelsOutOfModel":"off",
+                        "UpdateModelReferenceTargets":"IfOutOfDateOrStructuralChange",
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"8",
+                    "_object_class":"Simulink.SFSimCC",
+                    "_properties":{
+                        "CustomCodeFunctionArrayLayout":[                        ],
+                        "CustomCodeUndefinedFunction":"UseInterfaceOnly",
+                        "SimUseLocalCustomCode":"off",
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"9",
+                    "_object_class":"Simulink.RTWCC",
+                    "_properties":{
+                        "BuildConfiguration":"Faster Builds",
+                        "Components":{
+                            "_array_class":"Simulink.ConfigComponent",
+                            "_elements":[
+                                {
+                                    "_id":"10",
+                                    "_object_class":"Simulink.CodeAppCC",
+                                    "_properties":{
+                                        "StateflowObjectComments":"on",
+                                        "Version":"26.1.0"
+                                    }
+                                },
+                                {
+                                    "_id":"11",
+                                    "_object_class":"Simulink.GRTTargetCC",
+                                    "_properties":{
+                                        "CPPClassGenCompliant":"on",
+                                        "CombineOutputUpdateFcns":"on",
+                                        "CompOptLevelCompliant":"on",
+                                        "ConcurrentExecutionCompliant":"on",
+                                        "ERTCustomFileBanners":"off",
+                                        "GRTInterface":"off",
+                                        "GenerateAllocFcn":"off",
+                                        "GenerateSampleERTMain":"off",
+                                        "InstructionSetExtensions":{
+                                            "_array_type":"Cell",
+                                            "_elements":[
+                                                "None"
+                                            ],
+                                            "_mw_element_type":"MATLABArray",
+                                            "_num_columns":1,
+                                            "_num_rows":1
+                                        },
+                                        "MATLABClassNameForMDSCustomization":"Simulink.SoftwareTarget.GRTCustomization",
+                                        "MatFileLogging":"on",
+                                        "ModelReferenceCompliant":"on",
+                                        "ModelStepFunctionPrototypeControlCompliant":"off",
+                                        "MultiwordLength":2048,
+                                        "ParMdlRefBuildCompliant":"on",
+                                        "SupportContinuousTime":"on",
+                                        "SupportNonFinite":"on",
+                                        "SupportNonInlinedSFcns":"on",
+                                        "TargetLangStandard":"C89\/C90 (ANSI)",
+                                        "UseToolchainInfoCompliant":"on",
+                                        "Version":"26.1.0"
+                                    }
+                                }
+                            ],
+                            "_mw_element_type":"MATLABArray",
+                            "_num_columns":1,
+                            "_num_rows":2
+                        },
+                        "GPUComputeCapability":"3.5",
+                        "HardwareBoard":"None",
+                        "RTWUseLocalCustomCode":"off",
+                        "SystemTargetFile":"grt.tlc",
+                        "Toolchain":"Automatically locate an installed toolchain",
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"12",
+                    "_object_class":"SlCovCC.ConfigComp",
+                    "_properties":{
+                        "CovEnable":"off",
+                        "CovExternalEMLEnable":"off",
+                        "CovIncludeTopModel":"on",
+                        "CovMetricSettings":"dw",
+                        "CovModelRefEnable":"off",
+                        "CovSaveCumulativeToWorkspaceVar":"on",
+                        "CovSaveSingleToWorkspaceVar":"on",
+                        "CovScope":"EntireSystem",
+                        "Description":"Simulink Coverage Configuration Component",
+                        "Version":"26.1.0"
+                    }
+                },
+                {
+                    "_id":"13",
+                    "_object_class":"hdlcoderui.hdlcc",
+                    "_properties":{
+                        "Description":"HDL Coder custom configuration component",
+                        "HDLCActiveTab":48,
+                        "Version":"26.1.0"
+                    }
+                }
+            ],
+            "_mw_element_type":"MATLABArray",
+            "_num_columns":1,
+            "_num_rows":10
+        },
+        "ConfigPrmDlgPosition":[
+            135,
+            33,
+            1231,
+            712
+        ],
+        "CurrentDlgPage":"Data Import\/\/Export",
+        "ExtraOptions":"",
+        "Name":"Configuration",
+        "Version":"26.1.0"
+    }
+}
+__MWOPC_PART_BEGIN__ /simulink/configSetInfo.json
+{
+    "ConfigSetInfo":[
+        {
+            "Active":true,
+            "ConfigSetName":"Configuration",
+            "PartName":"\/simulink\/configSet0.json"
+        }
+    ]
+}
+__MWOPC_PART_BEGIN__ /simulink/graphicalInterface.json
+{
+    "PreCompExecutionDomainType":"Unset",
+    "SimulinkSubDomainType":"Simulink",
+    "SolverName":"ode45",
+    "_mw_element_name":"GraphicalInterface"
+}
+__MWOPC_PART_BEGIN__ /simulink/hdlParams.xml
+<?xml version="1.0" encoding="utf-8"?>
+<HDLParams>
+  <Object PropName="HDLParams" ObjectID="1" ClassName="slprops.hdlmdlprops">
+    <Array PropName="mdlProps" Type="Cell" Dimension="1*2">
+      <Cell Class="char">HDLSubsystem</Cell>
+      <Cell Class="char">$bdroot</Cell>
+    </Array>
+  </Object>
+</HDLParams>
+
+__MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2025a_20251111">
+  <System type="System" uuid="3095c00a-ff45-40d3-b7fc-2de05801ae51">
+    <Interface type="Interface" uuid="dd9cefeb-e7a9-4a39-85e6-c172e64c7ec5"/>
+  </System>
+</MF0>
+__MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.json
+{
+    "SimscapeDaeAutoSolver":"ode23t",
+    "_mw_element_name":"SimscapeModelParametersPlugin"
+}
+__MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2026b_202511130930">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="392ccc27-018c-4ba4-8472-7531c32f4e8e">
+    <priorityDirection>HighNumberLast</priorityDirection>
+    <defaultBarrierBehavior type="sltp.mm.core.BarrierBehavior" uuid="93e8e623-6e01-48b1-8c7f-4602ce2d58e4"/>
+    <defaultEventBehavior type="sltp.mm.core.EventBehavior" uuid="69667a5a-da4f-4034-ba45-07d7d1b714ca"/>
+    <editorState type="sltp.mm.core.EditorState" uuid="5242b3f5-a90a-49ac-9ee0-958bcea29d66">
+      <isSynchronized>true</isSynchronized>
+      <panelState type="sltp.mm.core.EditorPanelState" uuid="25725fce-eb6a-41c6-ba58-52cda1b04e84"/>
+    </editorState>
+    <rootTask type="sltp.mm.core.Task" uuid="59aa1849-3acf-4203-99ea-835476f92982">
+      <context type="sltp.mm.core.Context" uuid="392ccc27-018c-4ba4-8472-7531c32f4e8e"/>
+      <explicit>false</explicit>
+      <name>Default</name>
+      <priority>-2147483648</priority>
+      <subgraph type="sltp.mm.core.Graph" uuid="41430d97-05f5-4b7f-88c1-10d30b82c994">
+        <tasks type="sltp.mm.core.Task" uuid="3774ea49-8a77-4f1c-b005-e8ed2a5da710">
+          <baseTask>true</baseTask>
+          <context type="sltp.mm.core.Context" uuid="392ccc27-018c-4ba4-8472-7531c32f4e8e"/>
+          <explicit>false</explicit>
+          <id>1</id>
+          <isTimed>true</isTimed>
+          <name>Cont</name>
+          <priority>40</priority>
+          <rates type="sltp.mm.core.Rate" uuid="7c2d28de-9cce-49d3-a4ca-605355baa6e9">
+            <annotation>Cont</annotation>
+            <color>255</color>
+            <hasBlocks>true</hasBlocks>
+            <identifier>Continuous00</identifier>
+            <rateIndex>0</rateIndex>
+            <rateSpec type="sltp.mm.core.RateSpec">
+              <period>0.0</period>
+            </rateSpec>
+            <sti>0</sti>
+          </rates>
+          <rates type="sltp.mm.core.Rate" uuid="109c7744-9560-4691-b083-169f2aea78d9">
+            <annotation>D1</annotation>
+            <color>-12240129</color>
+            <hasBlocks>true</hasBlocks>
+            <rateIndex>1</rateIndex>
+            <rateSpec type="sltp.mm.core.RateSpec">
+              <period>.1</period>
+            </rateSpec>
+            <sti>1</sti>
+          </rates>
+        </tasks>
+      </subgraph>
+    </rootTask>
+  </sltp.mm.core.Context>
+</sltp_graph>
+__MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2025a_202406271400">
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="129f16a1-20fd-46b9-80d9-1e01f385561e">
+    <entities type="diagram.editor.model.Entity" uuid="2d74476b-f854-4cb3-b14a-c350c4729582">
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="c30fc3b1-fa32-4663-8453-bdd1c2f211c1"/>
+      <title>Cont</title>
+      <type>base</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="2808d328-3baa-458b-9945-2d7523e8af8c">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="f916187f-04ff-4bd4-b718-460f79a8e107"/>
+        <title>Cont</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="65f74ca9-2539-4422-8b6e-c7c401adc48d"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="e890f4e3-d237-4d54-bab8-74588f4d5d87">
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="65f74ca9-2539-4422-8b6e-c7c401adc48d">
+      <children type="sltp.mm.syntax.Node" uuid="c30fc3b1-fa32-4663-8453-bdd1c2f211c1">
+        <priority>40</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#000000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0</rate>
+          <title>Cont</title>
+        </rates>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#ff453a</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0.1</rate>
+          <title>D1</title>
+        </rates>
+        <title>Cont</title>
+        <type>base</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="2d74476b-f854-4cb3-b14a-c350c4729582"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="f916187f-04ff-4bd4-b718-460f79a8e107">
+          <title>Cont</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="2808d328-3baa-458b-9945-2d7523e8af8c"/>
+        </subgraph>
+      </children>
+      <title>Default</title>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="129f16a1-20fd-46b9-80d9-1e01f385561e"/>
+    </rootGraph>
+  </sltp.mm.syntax.Context>
+</sltp_editor>
+__MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[162, 43, 999, 548]</P>
+  <P Name="Open">on</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">14</P>
+  <Block BlockType="M-S-Function" Name="3D Graph" SID="12">
+    <PortCounts in="1"/>
+    <P Name="Position">[515, 89, 570, 121]</P>
+    <P Name="ZOrder">25</P>
+    <P Name="CopyFcn">if exist(&apos;sfun3d&apos;,&apos;file&apos;), sfun3d([],&apos;CopyBlock&apos;); end</P>
+    <P Name="DeleteFcn">if exist(&apos;sfun3d&apos;,&apos;file&apos;), sfun3d([],&apos;DeleteBlock&apos;); end</P>
+    <P Name="LoadFcn">if exist(&apos;sfun3d&apos;,&apos;file&apos;), sfun3d([],&apos;LoadBlock&apos;); end</P>
+    <P Name="NameChangeFcn">if exist(&apos;sfun3d&apos;,&apos;file&apos;), sfun3d([],&apos;NameChange&apos;); end</P>
+    <P Name="FunctionName">sfun3d</P>
+    <P Name="Parameters">ax,T,np,cp,gd,ls,mk,mx,hd,tb</P>
+    <Mask>
+      <Type>3D Graph</Type>
+      <Display RunInitForIconRedraw="off">t=linspace(0,2*pi,50); plot(sin(2*t),sin(3*t+pi/2));</Display>
+      <Description>This block plots the position of several points in the XYZ space. The input contains the coordinates of all the points (x1,y1,z1,x2,y2,z2,...). 
+The number of moving points (lines), the XYZ ranges, sampling time, camera position, and grid (among other things) can be set as mask parameters.</Description>
+      <Help>This block plots the position of several points in the XYZ space. The input contains the coordinates of all the points (x1,y1,z1,x2,y2,z2,...). 
+The number of moving points (lines), the XYZ ranges, sampling time, camera position, and grid (among other things) can be set as mask parameters.</Help>
+      <MaskParameter Name="np" Type="edit">
+        <Prompt>Number of moving points (lines)</Prompt>
+        <Value>2</Value>
+      </MaskParameter>
+      <MaskParameter Name="ax" Type="edit">
+        <Prompt>Range: [xmin xmax  ymin ymax zmin zmax]</Prompt>
+        <Value>[-3 3 -3 3 -3 3]</Value>
+      </MaskParameter>
+      <MaskParameter Name="mx" Type="edit">
+        <Prompt>Max number of points in each line</Prompt>
+        <Value>1e4</Value>
+      </MaskParameter>
+      <MaskParameter Name="T" Type="edit">
+        <Prompt>Sampling Time</Prompt>
+        <Value>0.1</Value>
+      </MaskParameter>
+      <MaskParameter Name="cp" Type="edit">
+        <Prompt>Camera position (use [0 0 1] for 2D XY view)</Prompt>
+        <Value>[3 2 1]</Value>
+      </MaskParameter>
+      <MaskParameter Name="gd" Type="checkbox">
+        <Prompt>Grid (on|off)</Prompt>
+        <Value>on</Value>
+      </MaskParameter>
+      <MaskParameter Name="hd" Type="checkbox">
+        <Prompt>HeadMarkers (on|off)</Prompt>
+        <Value>off</Value>
+      </MaskParameter>
+      <MaskParameter Name="tb" Type="checkbox">
+        <Prompt>Toolbar (on|off)</Prompt>
+        <Value>off</Value>
+      </MaskParameter>
+      <MaskParameter Name="ls" Type="popup" Evaluate="off" Tunable="off">
+        <Prompt>LineStyle</Prompt>
+        <Value>-</Value>
+        <TypeOptions>
+          <Option>-</Option>
+          <Option>--</Option>
+          <Option>:</Option>
+          <Option>-.</Option>
+          <Option>none</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="mk" Type="popup" Evaluate="off" Tunable="off">
+        <Prompt>LineMarker</Prompt>
+        <Value>none</Value>
+        <TypeOptions>
+          <Option>none</Option>
+          <Option>.</Option>
+          <Option>+</Option>
+          <Option>o</Option>
+          <Option>*</Option>
+          <Option>x</Option>
+          <Option>square</Option>
+          <Option>diamond</Option>
+          <Option>v</Option>
+          <Option>^</Option>
+          <Option>&gt;</Option>
+          <Option>&lt;</Option>
+          <Option>pentagram</Option>
+          <Option>hexagram</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <DialogControl Type="Group" Name="DescGroupVar">
+        <Prompt>%&lt;MaskType&gt;</Prompt>
+        <DialogControl Type="Text" Name="DescTextVar">
+          <Prompt>%&lt;MaskDescription&gt;</Prompt>
+        </DialogControl>
+      </DialogControl>
+      <DialogControl Type="Group" Name="ParameterGroupVar">
+        <Prompt>Parameters</Prompt>
+        <DialogControl Type="Edit" Name="np">
+          <Prompt>Number of moving points (lines)</Prompt>
+        </DialogControl>
+        <DialogControl Type="Edit" Name="ax">
+          <Prompt>Range: [xmin xmax  ymin ymax zmin zmax]</Prompt>
+        </DialogControl>
+        <DialogControl Type="Edit" Name="mx">
+          <Prompt>Max number of points in each line</Prompt>
+        </DialogControl>
+        <DialogControl Type="Edit" Name="T">
+          <Prompt>Sampling Time</Prompt>
+        </DialogControl>
+        <DialogControl Type="Edit" Name="cp">
+          <Prompt>Camera position (use [0 0 1] for 2D XY view)</Prompt>
+        </DialogControl>
+        <DialogControl Type="CheckBox" Name="gd">
+          <Prompt>Grid (on|off)</Prompt>
+        </DialogControl>
+        <DialogControl Type="CheckBox" Name="hd">
+          <Prompt>HeadMarkers (on|off)</Prompt>
+        </DialogControl>
+        <DialogControl Type="CheckBox" Name="tb">
+          <Prompt>Toolbar (on|off)</Prompt>
+        </DialogControl>
+        <DialogControl Type="Popup" Name="ls">
+          <Prompt>LineStyle</Prompt>
+        </DialogControl>
+        <DialogControl Type="Popup" Name="mk">
+          <Prompt>LineMarker</Prompt>
+        </DialogControl>
+      </DialogControl>
+    </Mask>
+  </Block>
+  <Block BlockType="Mux" Name="Mux" SID="2">
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[205, 69, 210, 101]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">3</P>
+    <P Name="DisplayOption">bar</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Point1: XYZ</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Mux" Name="Mux1" SID="3">
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[370, 105, 375, 135]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">3</P>
+    <P Name="DisplayOption">bar</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Point2: XYZ</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Mux" Name="Mux3" SID="4">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[455, 68, 460, 137]</P>
+    <P Name="ZOrder">22</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Sin" Name="Sine1" SID="5">
+    <PortCounts out="1"/>
+    <P Name="Position">[70, 60, 100, 90]</P>
+    <P Name="ZOrder">21</P>
+    <P Name="SampleTime">0</P>
+  </Block>
+  <Block BlockType="Sin" Name="Sine2" SID="6">
+    <PortCounts out="1"/>
+    <P Name="Position">[245, 95, 275, 125]</P>
+    <P Name="ZOrder">20</P>
+    <P Name="Amplitude">2</P>
+    <P Name="Frequency">2</P>
+    <P Name="SampleTime">0</P>
+  </Block>
+  <Block BlockType="Sin" Name="Sine3" SID="7">
+    <PortCounts out="1"/>
+    <P Name="Position">[110, 70, 140, 100]</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Phase">pi/2</P>
+    <P Name="SampleTime">0</P>
+  </Block>
+  <Block BlockType="Sin" Name="Sine4" SID="8">
+    <PortCounts out="1"/>
+    <P Name="Position">[285, 105, 315, 135]</P>
+    <P Name="ZOrder">18</P>
+    <P Name="Amplitude">2</P>
+    <P Name="Frequency">2</P>
+    <P Name="Phase">pi/2</P>
+    <P Name="SampleTime">0</P>
+  </Block>
+  <Block BlockType="Sin" Name="Sine5" SID="9">
+    <PortCounts out="1"/>
+    <P Name="Position">[150, 80, 180, 110]</P>
+    <P Name="ZOrder">17</P>
+    <P Name="Amplitude">1.5</P>
+    <P Name="Frequency">1.2</P>
+    <P Name="Phase">pi/2</P>
+    <P Name="SampleTime">0</P>
+  </Block>
+  <Block BlockType="Sin" Name="Sine6" SID="10">
+    <PortCounts out="1"/>
+    <P Name="Position">[320, 115, 350, 145]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="Amplitude">2.5</P>
+    <P Name="Frequency">2.2</P>
+    <P Name="Phase">pi/2</P>
+    <P Name="SampleTime">0</P>
+  </Block>
+  <Line>
+    <P Name="Name">Point1: XYZ</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Labels">[0, 1]</P>
+    <P Name="Src">2#out:1</P>
+    <P Name="Dst">4#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">5#out:1</P>
+    <P Name="Dst">2#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">7#out:1</P>
+    <P Name="Dst">2#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">9#out:1</P>
+    <P Name="Dst">2#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">Point2: XYZ</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">3#out:1</P>
+    <P Name="Dst">4#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">6#out:1</P>
+    <P Name="Dst">3#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">10#out:1</P>
+    <P Name="Dst">3#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">8#out:1</P>
+    <P Name="Dst">3#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">11</P>
+    <P Name="Src">4#out:1</P>
+    <P Name="Dst">12#in:1</P>
+  </Line>
+  <Annotation SID="11">
+    <P Name="Name">New 3DScope usage example with two moving points (2014b+). Copyright 2017 The MathWorks, Inc.</P>
+    <P Name="Position">[72, 184, 522, 198]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="HorizontalAlignment">left</P>
+    <P Name="VerticalAlignment">top</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsInfo>
+  <Object PropName="BdWindowsInfo" ObjectID="1" ClassName="Simulink.BDWindowsInfo">
+    <Object PropName="WindowsInfo" ObjectID="2" ClassName="Simulink.WindowInfo">
+      <P Name="IsActive" Class="logical">1</P>
+      <P Name="Location" Class="double">[162.0, 43.0, 837.0, 505.0]</P>
+      <Object PropName="ModelBrowserInfo" ObjectID="3" ClassName="Simulink.ModelBrowserInfo">
+        <P Name="Visible" Class="logical">0</P>
+        <P Name="DockPosition" Class="char">Left</P>
+        <P Name="Width" Class="int32">50</P>
+        <P Name="Height" Class="int32">50</P>
+        <P Name="Filter" Class="int32">9</P>
+        <P Name="Minimized" Class="char">Unset</P>
+      </Object>
+      <Object PropName="ExplorerBarInfo" ObjectID="4" ClassName="Simulink.ExplorerBarInfo">
+        <P Name="Visible" Class="logical">1</P>
+      </Object>
+      <Object PropName="EditorsInfo" ObjectID="5" ClassName="Simulink.EditorInfo">
+        <P Name="IsActive" Class="logical">1</P>
+        <P Name="IsTabbed" Class="logical">1</P>
+        <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
+        <P Name="LoadSaveID" Class="char">0</P>
+        <P Name="Extents" Class="double">[803.0, 270.0]</P>
+        <P Name="ZoomFactor" Class="double">1.0</P>
+        <P Name="Offset" Class="double">[0.0, 0.0]</P>
+        <P Name="SceneRectInView" Class="double">[0.0, 0.0, 803.0, 270.0]</P>
+      </Object>
+      <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
+        <Object ObjectID="6">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">640</P>
+          <P Name="Height" Class="int32">480</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+        <Object ObjectID="7">
+          <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
+          <P Name="ID" Class="char">Referenced Files</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char">{&quot;filterShowRefModels&quot;:&quot;true&quot;,&quot;filterShowRefSubs&quot;:&quot;true&quot;,&quot;filterShowOnlyDirtyFiles&quot;:&quot;false&quot;}</P>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Left</P>
+          <P Name="Width" Class="int32">640</P>
+          <P Name="Height" Class="int32">480</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+      </Array>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjQD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAAA0QAAADQ/AEAAAAB+/////8AAAAAAP////8AAAJ5AP///wAAA0UAAAFLAAAAAQAAAAIAAAABAAAAAvwAAAAA</P>
+      <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
+      <P Name="WindowUuid" Class="char">87b42fd1-d4a2-47ca-95af-365d66ffdc42</P>
+    </Object>
+    <P Name="BDUuid" Class="char">a86629fc-09eb-43b9-afbc-88d3e3ceae1a</P>
+  </Object>
+</WindowsInfo>
+
+__MWOPC_PACKAGE_END__
