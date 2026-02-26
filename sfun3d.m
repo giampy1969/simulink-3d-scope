@@ -16,8 +16,8 @@ function sfun3d(block,varargin)
 if nargin == 1
     setup(block)
 else
-    % These calls are defined in the Properties -> Callbacks
-    % section of the S-Function block.
+    % These calls are defined in the Properties section (and then Callbacks
+    % tab) of the S-Function block.
     switch varargin{end}
         case 'NameChange'
             LocalBlockNameChangeFcn
@@ -38,6 +38,25 @@ if str2double(vrs(1:3))<8.4
     error(['This S-Function (sfun3d.m) works only within MATLAB versions 2014b and later.' newline ...
         'For older MATLAB versions, install a previous block version based on the S-function sfunxyz.m instead.']);
 end
+
+% Build callback strings (to be called when the user performs some actions
+% on the block). You could also set these manually by accessing the
+% S-Function block properties and clicking on the Callbacks tab.
+
+callbacks={
+    'CopyFcn',       'if exist(''sfun3d'',''file''), sfun3d([],''CopyBlock''); end';
+    'DeleteFcn',     'if exist(''sfun3d'',''file''), sfun3d([],''DeleteBlock''); end';
+    'LoadFcn',       'if exist(''sfun3d'',''file''), sfun3d([],''LoadBlock''); end';
+    'NameChangeFcn', 'if exist(''sfun3d'',''file''), sfun3d([],''NameChange''); end';
+    };
+
+% set callbacks as block properties (for these, flag is a string)
+for i=1:length(callbacks)
+    if ~strcmp(get_param(gcbh,callbacks{i,1}),callbacks{i,2})
+        set_param(gcbh,callbacks{i,1},callbacks{i,2})
+    end
+end
+
 
 % Setup functional port properties to dynamically inherited.
 block.SetPreCompInpPortInfoToDynamic;
